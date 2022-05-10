@@ -11,6 +11,12 @@
   </head>
 
   <body>
+  <div class="navbar fixed-top navbar-light bg-light">
+    <h3 class="px-3"><%= link_to "RailsWikinimous", articles_path, class: 'link'  %></h3>
+    <%= link_to new_article_path, class: 'btn btn-light m-2 px-3' do %>
+      <i class="fas fa-plus"></i>
+    <% end %>
+  </div>
     <%= yield %>
   </body>
 </html>

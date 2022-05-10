@@ -1,0 +1,21 @@
+<div class="container mx-auto mt-5 p-3">
+  <h1 class="mt-5">New Article</h1>
+
+  <% if @article.errors.any? %>
+  <% @article.errors.full_messages.each do |msg| %>
+    <p class='text-danger'><%= msg %></p>
+  <% end %>
+<% end %>
+
+  <%= form_for @article do |f| %>
+    <div class="form-group">
+      <%= f.label :title %>
+      <%= f.text_field :title, class: 'form-control' %>
+      <%= f.label :content %>
+      <%= f.text_area :content, class: 'form-control' %>
+    </div>
+      <%= f.submit class: 'btn btn-dark mt-3' %>
+  <% end %>
+
+
+</div>

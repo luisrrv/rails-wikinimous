@@ -1,0 +1,21 @@
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+.link {
+  text-decoration: none;
+  color: steelblue;
+  .link:hover {
+    color: rgb(50, 91, 125);
+  }
+}
+
+.navbar {
+  i {
+    color: steelblue;
+    i:hover {
+      color: rgb(34, 62, 85);
+    }
+  }
+}
